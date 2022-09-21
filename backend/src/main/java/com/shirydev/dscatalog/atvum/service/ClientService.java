@@ -19,7 +19,7 @@ import java.util.Optional;
 public class ClientService {
 
     @Autowired
-    ClientRepository repository;
+    private ClientRepository repository;
 
     @Transactional(readOnly = true)
     public Page<ClientDTO> findAllPaged(PageRequest pageRequest){
